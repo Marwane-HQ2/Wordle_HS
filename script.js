@@ -26,7 +26,6 @@ function divCreate (clss = null, idC = null, idP = null, txt = null, ) { // Test
     if (idChild) {newDiv.id = idChild}
     if (textContent) {newDiv.textContent = textContent}
     if (idParent) {let parentEle = document.getElementById(idParent); parentEle.appendChild(newDiv);}
-    console.log(newDiv)
     
 }
 
@@ -42,7 +41,6 @@ function play (event) {
     while (answer.length < wordToFind.length) {
         answer += "-"
     }
-    console.log(answer)
     count += 1
     const uniqueId = answer + count.toString()
     divCreate("attempt", uniqueId, "playground") // TEXTE OPTIONNEL, undefined, et class aussi, trouver comment faire des class="..."; text="..."
@@ -75,5 +73,4 @@ for (let letter of "We are a hint ! Enter the word you would like to try:") {
         formatLetter.style.color = "#990000" // ROUGE
     }
     document.getElementById('labelWordAttempt').appendChild(formatLetter)
-    console.log(formatLetter)
 }
