@@ -1,0 +1,69 @@
+:root {
+    --grey-letter-color: #990000;
+    --yellow-letter-color: #FFBF00;
+    --green-letter-color: #4CC417;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Allura&family=Audiowide&family=Indie+Flower&family=Saira+Stencil+One&family=Shadows+Into+Light+Two&family=Sriracha&display=swap');
+body {
+    font-family: "Indie Flower", cursive;
+    background-image: linear-gradient( 45deg, #bce7a9, #ecdba9, #dfa2a2) ;
+}
+h1 {
+    text-align: center;
+    text-decoration: underline ;
+}
+
+z {
+    padding: 1px;
+}
+
+form {
+    border: 3px solid black;
+    border-radius: 2%;
+    padding: 5px;
+}
+
+button {
+    padding: 2px;
+    margin-left: 2px;
+    margin-right: 2px;
+    border-radius: 15%;
+}
+
+.attempt {
+    display: flex;
+}
+.green-letter {
+    color: var(--green-letter-color);
+    padding: 8px;
+    border: 1px solid black;
+    border-radius: 20%;
+}
+.green-letter:hover {
+    background-color: var(--green-letter-color);
+    color: #fff;
+}
+
+.yellow-letter {
+    color: var(--yellow-letter-color);
+    padding: 8px;
+    border: 1px solid black;
+    border-radius: 20%;
+}
+.yellow-letter:hover {
+    background-color: var(--yellow-letter-color);
+    color: #fff
+    
+}
+
+.grey-letter {
+    color: var(--grey-letter-color);
+    padding: 8px;
+    border: 1px solid black;
+    border-radius: 20%;
+}
+.grey-letter:hover {
+    background-color: var(--grey-letter-color);
+    color: #fff
+}

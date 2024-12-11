@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' width='30' height='30'><text x='0' y='25' font-size='25'>🗺</text></svg>" type="image/svg+xml">
+    <link rel="stylesheet" href="styles.css">
+    <title>Worlde</title>
+</head>
+<body>
+    <h1>Play Wordle !</h1>
+    <p>This is a simple version of wordle, enter a word, if a letter is in the world but isn't at the right spot, then it will appear yellow
+        , if it is in the word and in the right spot, then it will appear green ! Otherwise, it will appear red.</p>
+    <p>The word is <b id="len"></b> letters long ! But you can try words that are smaller or longer !</p>
+        
+        <form onsubmit="play(event)">
+            <label for="wordattempt" id="labelWordAttempt"></label> <!-- REMPLIR CETTE BALISE EN JS ET COLORER LES LETTRES -->
+            <input required type="text" id="wordattempt" placeholder="Can write anything...">
+            <br>
+            <button type="submit">Try !</button>
+        </form>
+
+        <div class = "container" id="playground"></div>
+
+    <script src="script.js"></script>
+</body>
+</html>
